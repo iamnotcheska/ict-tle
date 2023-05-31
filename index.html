@@ -10,6 +10,7 @@
     
     .container {
       width: 400px;
+      height:300px;
       margin: 0 auto;
       margin-top: 100px;
       background-color:pink;
@@ -34,29 +35,48 @@
     }
     
     .container input[type="submit"] {
-	align-items:center;
+	   align-items:center;
       width: 60%;
       background-color: black;
-	margin-left: 80px;
+	    margin-left: 80px;
       color: #ffffff;
       padding: 10px;
       border: none;
       border-radius: 30px;
       cursor: pointer;
+      margin-bottom:10px;
     }
+    
+    .container input[type="Sign Up"]{
+     text-align:center;
+      width:100px
+      background-color:white;
+      margin-left:110px;
+      color:black;
+      padding: 10px;
+      border:none;
+      border-radius:80px;
+   }
     
     .container input[type="submit"]:hover {
       background-color:#C4A484;
+    }
+    .container input[type="Sign Up"]:hover {
+     background-color:blue;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h2>Log-in</h2>
+    <h2>Welcome Back, User</h2>
     <form>
       <input type="text" name="username" placeholder="Username" required>
       <input type="password" name="password" placeholder="Password" required>
-      <input type="submit" value="Enter">
+      <input type="submit" value="log in">
+      <input type="sign up" value="Don't have an account?"><br>
+      <p align="center">
+      <u><font>Sign Up</font></u>
+      </p>
     </form>
   </div>
 </body>
